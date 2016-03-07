@@ -95,9 +95,212 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+   @font-face {
+       font-family: 'bebasregular';
+       src: url('../fonts/bebas___-webfont.eot');
+       src: url('../fonts/bebas___-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/bebas___-webfont.woff2') format('woff2'),
+            url('../fonts/bebas___-webfont.woff') format('woff'),
+            url('../fonts/bebas___-webfont.ttf') format('truetype'),
+            url('../fonts/bebas___-webfont.svg#bebasregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+   }
 
+   @font-face {
+       font-family: 'helvetica_neueregular';
+       src: url('../fonts/helveticaneue-thin-webfont.eot');
+       src: url('../fonts/helveticaneue-thin-webfont.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/helveticaneue-thin-webfont.woff2') format('woff2'),
+            url('../fonts/helveticaneue-thin-webfont.woff') format('woff'),
+            url('../fonts/helveticaneue-thin-webfont.ttf') format('truetype'),
+            url('../fonts/helveticaneue-thin-webfont.svg#helvetica_neueregular') format('svg');
+       font-weight: normal;
+       font-style: normal;
+   }
 
+   h1, h2, h3, h4, h5, h6 {
+     margin: 0;
+     padding: 0;
+     text-align: center;
+   }
 
+   body {
+     font-family: bebasregular;
+     background-image: url("../img/images/background.png");
+   }
+
+   .container {
+     width: 940px;
+     margin: 0 auto;
+   }
+
+   ul, li {
+     list-style: none;
+     padding-left: 0px;
+   }
+
+   .flex {
+     display: flex;
+   }
+
+   /*HEADER-SECTION*/
+
+   header .container {
+     height: 75px;
+     justify-content: space-between;
+     align-items: center;
+   }
+
+   .logo {
+     display: flex;
+     font-size: 1.1em;
+   }
+
+   .logo h1 {
+     font-weight: normal;
+   }
+
+   .logo-jet {
+     color: #e8603c;
+   }
+
+   .logo-ro {
+     color: #f3af9d;
+   }
+
+   nav {
+     width: 41%;
+   }
+
+   .primary-menu {
+     justify-content: space-between;
+   }
+
+   .primary-menu a {
+     text-decoration: none;
+     color: #b9b9b9;
+     transition: 0.4s;
+     letter-spacing: 103%;
+   }
+
+   .active, .primary-menu a:hover {
+     color: #e8663c;
+     font-size: 1.1em;
+   }
+
+   /*END HEADER SECTION*/
+
+   /*BEGIN SLIDER SECTION*/
+
+  .main-content {
+    justify-content: center;
+  }
+
+   .left-bar {
+     height: 63px;
+     background: #f3af9d;
+     width: 100%;
+     margin-right: 10px;
+   }
+
+   .right-bar {
+     height: 63px;
+     background: #f3af9d;
+     width: 100%;
+     margin-left: 10px;
+   }
+
+   .slide-nav img {
+     position: absolute;
+     top: 41%;
+     cursor: pointer;
+     transition: 0.4s;
+   }
+
+   .slideshow {
+     position: relative;
+   }
+
+  .slide-nav img:hover {
+    transform: scale(1.2);
+  }
+
+   .slide-arrow-left {
+     left: 2.5%;
+   }
+
+   .slide-arrow-right {
+     right: 2.5%;
+   }
+
+   .slide-text-container {
+     width: 410px;
+     position: absolute;
+     top: 60.5%;
+     left: 3.8%;
+     height: 122px;
+     background-color:rgba(232,102,60,0.8);
+   }
+
+   .slide-text {
+     color: white;
+   }
+
+   .slide-text h2 {
+     text-align: left;
+     margin: 20px 0px 0px 20px;
+     font-size: 1.125em;
+     font-weight: lighter;
+   }
+
+   .slide-text p {
+     font-family: helvetica_neueregular;
+     font-size: 0.8em;
+     color: white;
+     margin: 10px 20px 20px 20px;
+   }
+
+   /*END SLIDER SECTION*/
+
+   /*BEGIN THUMBNAIL SECTION*/
+
+   .thumbnail {
+     margin-top: 15px;
+   }
+
+   .thumbnail-images {
+     justify-content: space-between;
+   }
+
+   /*END THUMBNAIL SECTION*/
+
+   /*BEGIN FEATURE SECTION*/
+
+   .features {
+     margin-top: 20px;
+   }
+
+   .feature-container {
+     width: 31%;
+     height: 320px;
+     border: 1px black solid;
+   }
+
+   .feature-container img {
+     float: left;
+     margin: 10px 0px 0px 10px;
+   }
+
+   .feature-container h2 {
+     color: #e8663c;
+     font-weight: lighter;
+     font-size: 1.2em;
+   }
+
+   .features-content {
+     justify-content: space-between;
+   }
 
 
 
